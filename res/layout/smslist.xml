@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secret_bg"
+    android:orientation="vertical" >
+    <!-- android:background="#d8e0e8" -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#484E61" >
+    <TextView 
+        android:id="@+id/sms_title_text" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/sms_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="请输入短信内容"
+        android:maxLines="2">
+    </EditText> 
+    <Button
+        android:id="@+id/sms_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送">
+        </Button>
+    </LinearLayout>
+ </LinearLayout>

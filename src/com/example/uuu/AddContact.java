@@ -15,6 +15,7 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddContact extends Activity{
@@ -31,6 +32,8 @@ public class AddContact extends Activity{
 		contact = (EditText)findViewById(R.id.create_contact);
 		phonenumber = (EditText)findViewById(R.id.create_phonenumber);
 		submit = (Button)findViewById(R.id.create_submit);
+		TextView titleText = (TextView)findViewById(R.id.newctts_title);
+		titleText.setText("添加联系人");
 		submit.setOnClickListener(new OnClickListener() {			
 			@Override
 			public void onClick(View v) {

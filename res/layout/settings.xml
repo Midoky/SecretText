@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#484E61" >
+	<TextView
+	    android:id="@+id/settings_title"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+	</RelativeLayout>
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="28dp"
+        android:layout_below="@id/settings_title"
+        android:gravity="left"
+        android:text="进入主界面验证" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox1"
+        android:gravity="left"
+        android:text="------------------------------------------------------------------------------------------------------"
+        android:maxLines="1"
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="left"
+        android:layout_below="@id/line1"
+        android:text="由通知进入验证"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/checkBox2"
+        android:text="------------------------------------------------------------------------------------------------------"
+        android:maxLines="1"
+         />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textSize="28dp"
+        android:gravity="left"
+        android:layout_below="@id/line2"
+        android:text="短息内容不加密" />
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/checkBox3"
+        android:text="------------------------------------------------------------------------------------------------------"
+        android:maxLines="1"
+         />
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:layout_below="@id/line3"
+        android:text="重置密码" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/keys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:hint="请输入新密码,默认密码9408"
+        android:maxLength="6">
+    </EditText> 
+    <Button
+        android:id="@+id/submit_newkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定">
+        </Button>
+    </LinearLayout>
+ <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/keys"
+   		android:text="------------------------------------------------------------------------------------------------------"
+        android:maxLines="1"
+         />
+        
+ <Button 
+    android:id="@+id/about"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_below="@id/line4"
+    android:text="关于"
+     />
+ 
+</LinearLayout>

@@ -38,6 +38,8 @@
          </activity>
          <activity android:name=".AddContact" >
         </activity>
+         <activity android:name=".Settings" >
+        </activity>
          <activity android:name=".Ctts" >
         </activity>
          <activity android:name=".CttsAdapter" >

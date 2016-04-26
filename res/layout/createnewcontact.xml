@@ -24,8 +24,8 @@
                 android:layout_marginTop="22.0dp" >
  
                 <ImageView
-                    android:layout_width="57.0dp"
-                    android:layout_height="57.0dp"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:contentDescription="@null"
@@ -38,7 +38,7 @@
         android:layout_height="50.0dip"
         android:layout_marginLeft="12.0dip"
         android:layout_marginRight="12.0dip"
-        android:layout_marginTop="15.0dip"
+        android:layout_marginTop="20.0dip"
         android:drawablePadding="15.0dip"
         android:ems="4"
         android:hint="联系人姓名"
@@ -60,7 +60,7 @@
         android:layout_marginTop="15.0dip"
         android:drawablePadding="15.0dip"
         android:ems="4"
-        android:hint="   联系人电话"
+        android:hint="联系人电话"
         android:drawableLeft="@drawable/cell_phone"
         android:maxLength="11"
         android:numeric="integer"
@@ -78,6 +78,7 @@
         android:layout_height="50.0dp"
         android:layout_width="fill_parent"
         android:layout_marginLeft="12.0dp"
+        android:layout_marginTop="15.0dp"
         android:text="提交" 
         android:numeric="integer"
         android:paddingBottom="2.0dip"

@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.main_activity);
+		setContentView(R.layout.main_activity);		
 		Button button1 = (Button) findViewById(R.id.button1);
 		Button button2 = (Button) findViewById(R.id.button2);
 		Button button3 = (Button) findViewById(R.id.button3);

@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff0f0f0"
+    android:background="@drawable/main_bg"
+    android:gravity="bottom"
     android:orientation="vertical" >
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
@@ -16,30 +19,47 @@
         android:textSize="24sp"
         />
     </RelativeLayout>
-        <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="146dp"
-        android:text="设置" />
+     <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50.0dp" >
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="222dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wings" />
+
+       </FrameLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom" >
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentLeft="true"
-        android:text="打开短信箱" />
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:background="@drawable/text_icon" />
 
-     <Button
-         android:id="@+id/button3"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/button2"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="50dp"
-         android:text="添加私密联系人" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="101dp"
+        android:layout_height="80dp"
+        android:layout_weight="0.62"
+        android:background="@drawable/contact_icon" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="79dp"
+        android:layout_height="80dp"
+        android:layout_weight="0.65"
+        android:background="@drawable/setting_icon" />
+
+</LinearLayout>
 
  </LinearLayout>

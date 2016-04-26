@@ -1,4 +1,4 @@
-/*王戌琦   2016年4月2日16:04:57
+/*王戌琦   2016年4月20日
  * 功能：主菜单
  * 详细介绍：各种功能按键集合。
  */
@@ -29,12 +29,19 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main_activity);
 		Button button1 = (Button) findViewById(R.id.button1);
-//		Button button2 = (Button) findViewById(R.id.button2);
+		Button button2 = (Button) findViewById(R.id.button2);
 		Button button3 = (Button) findViewById(R.id.button3);
 		TextView titleText = (TextView)findViewById(R.id.main_title_text);
 		titleText.setText("隐私短信");
 		Intent intent = new Intent(this, MsgService.class);
 		startService(intent);
+		//这个if用来判断是否需要启动login
+/*		if(true){//if里还需要加代码
+			Intent intent2 = new Intent(this,Login.class);
+			startActivity(intent2);
+			finish();
+		}
+		*/
         button1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -44,15 +51,15 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		} );
-/*		button2.setOnClickListener(new OnClickListener() {
+		button2.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this,SendMessage.class);
+				Intent intent = new Intent(MainActivity.this,Settings.class);
 				startActivity(intent);
 			}
-		} );*/
+		} );
 		button3.setOnClickListener(new OnClickListener() {
 			
 			@Override

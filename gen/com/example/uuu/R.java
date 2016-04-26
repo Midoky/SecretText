@@ -27,12 +27,13 @@ public final class R {
         public static final int circle=0x7f020002;
         public static final int contacts=0x7f020003;
         public static final int ic_launcher=0x7f020004;
-        public static final int lock=0x7f020005;
-        public static final int mouse=0x7f020006;
-        public static final int p_left=0x7f020007;
-        public static final int p_right=0x7f020008;
-        public static final int qq_icon=0x7f020009;
-        public static final int secret_bg=0x7f02000a;
+        public static final int loading_bg=0x7f020005;
+        public static final int lock=0x7f020006;
+        public static final int mouse=0x7f020007;
+        public static final int p_left=0x7f020008;
+        public static final int p_right=0x7f020009;
+        public static final int qq_icon=0x7f02000a;
+        public static final int secret_bg=0x7f02000b;
     }
     public static final class id {
         public static final int about=0x7f080021;
@@ -80,13 +81,14 @@ public final class R {
         public static final int cttslist=0x7f030001;
         public static final int item_ctts=0x7f030002;
         public static final int item_sms=0x7f030003;
-        public static final int login=0x7f030004;
-        public static final int login1=0x7f030005;
-        public static final int main_activity=0x7f030006;
-        public static final int msg_item=0x7f030007;
-        public static final int mydatabasehelper=0x7f030008;
-        public static final int settings=0x7f030009;
-        public static final int smslist=0x7f03000a;
+        public static final int loading=0x7f030004;
+        public static final int login=0x7f030005;
+        public static final int login1=0x7f030006;
+        public static final int main_activity=0x7f030007;
+        public static final int msg_item=0x7f030008;
+        public static final int mydatabasehelper=0x7f030009;
+        public static final int settings=0x7f03000a;
+        public static final int smslist=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f070000;

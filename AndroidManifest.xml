@@ -15,20 +15,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/qq_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTask"
             android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".SendMessage" >
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        <activity 
+            android:name=".Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".SendMessage" >
-            <category android:name="android.intent.category.DEFAULT" />
         </activity>
         <activity android:name=".MyDatabaseHelper" >
         </activity>

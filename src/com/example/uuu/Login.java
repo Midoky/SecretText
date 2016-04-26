@@ -34,7 +34,7 @@ public class Login extends Activity{
 			//	String text = CText.getText().toString();
 				if("9408".equals(CText.getText().toString()))
 				{
-					Intent intent = new Intent(Login.this,Ctts.class);
+					Intent intent = new Intent(Login.this,MainActivity.class);
 					startActivity(intent);
 					finish();
 				}
@@ -42,8 +42,7 @@ public class Login extends Activity{
 				{
 					  Intent intent = new Intent(Intent.ACTION_MAIN);
 					  intent.setType("vnd.android-dir/mms-sms");
-					   startActivity(intent);
-					   finish();
+					  startActivity(intent);
 				}
 				
 			}

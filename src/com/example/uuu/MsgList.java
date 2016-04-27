@@ -109,7 +109,10 @@ public class MsgList extends Activity{
 						}
 					    final String sendThings = build1.toString();
 						smsManager.sendTextMessage(getIntent().getStringExtra("address").toString(), null,sendThings, pi, null);
-						
+						//if()
+						/*
+						 * 如果发送失败的话，toast提示出错。
+						 */
 						
 						
 					}

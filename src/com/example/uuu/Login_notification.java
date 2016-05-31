@@ -15,7 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Login extends Activity{
+public class Login_notification extends Activity{
 	
 	private EditText CText;
 	@Override
@@ -24,9 +24,9 @@ public class Login extends Activity{
 	{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.login);
-		CText = (EditText)findViewById(R.id.cText);
-		Button bnLogin = (Button)findViewById(R.id.bnLogin);
+		setContentView(R.layout.login1);
+		CText = (EditText)findViewById(R.id.n_cText);
+		Button bnLogin = (Button)findViewById(R.id.n_bnLogin);
 		
 		bnLogin.setOnClickListener(new OnClickListener() {			
 			@Override
@@ -37,7 +37,7 @@ public class Login extends Activity{
 	        	String str = sp.getString("key", "0000");
 				if(str.equals(CText.getText().toString()))
 				{
-					Intent intent = new Intent(Login.this,MainActivity.class);
+					Intent intent = new Intent(Login_notification.this,CttsList.class);
 					startActivity(intent);
 					finish();
 				}

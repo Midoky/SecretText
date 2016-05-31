@@ -10,7 +10,7 @@
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <application
@@ -36,6 +36,8 @@
         </activity>
          <activity android:name=".Login" >
         </activity>
+        <activity android:name=".Login_notification" >
+        </activity>
          <activity android:name=".SmsList" >
          </activity>
          <activity android:name=".AddContact" >
@@ -53,6 +55,8 @@
         <activity android:name=".MsgAdapter" >
         </activity>
         <activity android:name=".MsgList" >
+        </activity>
+		<activity android:name=".About" >
         </activity>
         <service android:name  =".MsgService">
         </service>          	

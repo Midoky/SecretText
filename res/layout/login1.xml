@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dp"
         android:orientation="vertical"
         android:paddingBottom="10.0dp" >
  
@@ -36,7 +37,7 @@
  
  
             <EditText
-                android:id="@+id/cText"
+                android:id="@+id/n_cText"
                 android:layout_width="fill_parent"
                 android:layout_height="50.0dp"
                 android:layout_marginBottom="20.0dp"
@@ -59,7 +60,7 @@
                 android:textSize="16.0sp" />
  
             <Button
-                android:id="@+id/bnLogin"
+                android:id="@+id/n_bnLogin"
                 android:layout_width="fill_parent"
                 android:layout_height="50.0dp"
                 android:layout_marginLeft="12.0dp"

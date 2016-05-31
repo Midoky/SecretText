@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.14"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20.0dp" >
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wings" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView 
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:text="隐私短信  1.0"/>
+      <TextView
+          android:layout_gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="隐私短信App由青岛大学2013级信息安全兴趣小组在咸鹤群导师的指导下完成设计，此版APP为初版Demo，可能存在部分BUG，欢迎用户的修改建议。" 
+          android:paddingTop="30dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="负责人：王戌琦。" 
+          android:paddingLeft="10dp"
+          android:paddingTop="40dp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="组员：史永飞，仝乐，燕嘉伟，陆珊。"
+          android:paddingLeft="10dp" 
+          android:paddingTop="5dp" />
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2016-5"
+          android:paddingLeft="256dp" 
+          android:paddingTop="15dp" />
+
+    </LinearLayout>
+ 
+</RelativeLayout>

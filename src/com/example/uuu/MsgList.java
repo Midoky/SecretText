@@ -66,9 +66,9 @@ public class MsgList extends Activity{
 
 			TelephonyManager tm = (TelephonyManager)this.getSystemService(Context.TELEPHONY_SERVICE);
 		   
-			String deviceid = tm.getDeviceId(); //设备IME，唯一序列号
-		   
-			String tel = tm.getLine1Number();//手机号码
+//			String deviceid = tm.getDeviceId(); //设备IME，唯一序列号
+//		   
+//			String tel = tm.getLine1Number();//手机号码
 			
 			initMsgs();
 			adapter = new MsgAdapter(MsgList.this,R.layout.msg_item,msgList);
@@ -99,9 +99,11 @@ public class MsgList extends Activity{
 						Intent sentIntent = new Intent("SENT_SMS_ACTION");
 						PendingIntent pi = PendingIntent.getBroadcast(MsgList.this, 0, sentIntent, 0);
 						StringBuilder build1 = new StringBuilder();
-						build1.append("INTERCEPT");
-					    build1.append(content);
-					    for(int i = 9; i < build1.length(); i++)//对短信内容进行加密  编码后移一位  真正的内容从第九位开始
+						String str_signal = content.substring(0, 2).hashCode() + "";
+						String str_signal_2 = str_signal.substring(0, 2);
+						build1.append(str_signal_2);
+					    build1.append(content);//短信内容前面含有2位的哈希标志位，来源于短信原内容的前两位得到哈希值的前两位
+					    for(int i = 2; i < build1.length(); i++)//对短信内容进行加密  编码后移一位  真正的内容从第2位开始
 					    {
 							char x = build1.charAt(i);
 							x += 1;
@@ -131,6 +133,17 @@ public class MsgList extends Activity{
 						if(cursor.getString(cursor.getColumnIndex("type")).toString().equals("0")){//如果有，则看看是发送短信还是接收短信
 						String content = cursor.getString(cursor.getColumnIndex("content"));
 						String time = cursor.getString(cursor.getColumnIndex("time"));
+						StringBuilder build = new StringBuilder();
+						
+						build.append(content); //content来源于 service里面的fullmessage 那时候已经从第2位（下标从0 开始）截取了，所以不包含标志位，只是单纯的加密后的短信内容
+						for(int i = 0; i < build.length(); i++)
+						{									
+							    char x = build.charAt(i);
+								x -= 1;
+								build.setCharAt(i, x);
+					    }
+						content = build.toString();
+						
 						int type = Msg.TYPE_RECEIVED;
 						Msg msg = new Msg(content,type,time);		//加入豪华午餐
 						msgList.add(msg);

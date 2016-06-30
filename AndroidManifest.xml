@@ -19,48 +19,48 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-             android:name=".MainActivity"
+             android:name="com.QingdaoUniversity.SecretText.Functions.MainActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name=".SendMessage" >
+        <activity android:name="com.QingdaoUniversity.SecretText.Functions.SendMessage" >
             <category android:name="android.intent.category.DEFAULT" />
         </activity>
         <activity 
-            android:name="com.example.uuu.Loading">
+            android:name="com.QingdaoUniversity.SecretText.Functions.Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyDatabaseHelper" >
+        <activity android:name="com.QingdaoUniversity.SecretText.DataBase.DatabaseHelper" >
         </activity>
-         <activity android:name=".Login" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.Login" >
         </activity>
-        <activity android:name=".Login_notification" >
+        <activity android:name="com.QingdaoUniversity.SecretText.Functions.LoginNotification" >
         </activity>
-         <activity android:name=".SmsList" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.SmsList" >
          </activity>
-         <activity android:name=".AddContact" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.AddContact" >
         </activity>
-         <activity android:name=".Settings" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.Settings" >
         </activity>
-         <activity android:name=".Ctts" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.Ctts" >
         </activity>
-         <activity android:name=".CttsAdapter" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.CttsAdapter" >
         </activity>
-         <activity android:name=".CttsList" >
+         <activity android:name="com.QingdaoUniversity.SecretText.Functions.CttsList" >
         </activity>
-        <activity android:name=".Msg" >
+        <activity android:name="com.QingdaoUniversity.SecretText.Functions.Msg" >
         </activity>
-        <activity android:name=".MsgAdapter" >
+        <activity android:name="com.QingdaoUniversity.SecretText.Functions.MsgAdapter" >
         </activity>
-        <activity android:name=".MsgList" >
+        <activity android:name="com.QingdaoUniversity.SecretText.Functions.MsgList" >
         </activity>
-		<activity android:name=".About" >
+		<activity android:name="com.QingdaoUniversity.SecretText.Functions.About" >
         </activity>
-        <service android:name  =".MsgService">
+        <service android:name  ="com.QingdaoUniversity.SecretText.Service.MsgService">
         </service>          	
-        <receiver android:name=".BootCompleteReceiver">
+        <receiver android:name="com.QingdaoUniversity.SecretText.Service.BootCompleteReceiver">
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED"></action>
             </intent-filter>
